@@ -1,0 +1,21 @@
+<p>Double click to delete</p>
+<button (click)="sortbyimportant()">sort</button>
+<div class="todolist">
+<div *ngFor="let item of todolist" class="item">
+    
+    <app-todolist  [todoitem]="item" (dblclick)="deleteitem(item)"></app-todolist>
+</div>
+</div>
+<div>
+    <label>Is Impotant:</label>
+    <input [(ngModel)]="inputTodoItem.isimportant" type="checkbox">
+</div>
+<div>
+    <label>Text:</label>
+    <input [(ngModel)]="inputTodoItem.text" type="text">
+</div>
+<div>
+    <label>Deadline:</label>
+    <input [(ngModel)]="inputTodoItem.deadline" type="date">
+</div>
+<button (click)="addTodoItem()">Add</button>

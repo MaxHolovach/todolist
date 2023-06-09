@@ -1,0 +1,12 @@
+.iscomlete{
+    background-color: rgb(226, 226, 226);
+}
+.iscomletetext{
+    
+    text-decoration:line-through;
+}
+.important{
+    margin: 2px;
+    color: red;
+    font-weight: bold;
+}
